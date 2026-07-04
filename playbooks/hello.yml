@@ -1,0 +1,10 @@
+- name: Hello Phani
+  hosts: servers
+  become: yes
+
+  vars:
+    my_name: Phani
+
+  tasks:
+    - name: Greet User
+      command: echo "Hello {{ my_name }}, you are DevOps Engineer"
